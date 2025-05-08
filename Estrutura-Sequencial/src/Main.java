@@ -6,12 +6,25 @@
     conforme exemplo.
  */
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        System.out.println("--> Calculo de terreno <--");
+        System.out.println(" ");
+        System.out.print("Informe a largura do terreno:");
+        double largura = sc.nextDouble();
+        System.out.print("Informe o comprimento do terreno:");
+        double comprimento = sc.nextDouble();
+        System.out.print("Informe o valor por metro quadrado:");
+        double valor = sc.nextDouble();
+
+        double resArea = largura * comprimento;
+        double resValor = resArea * valor;
+
+        System.out.printf("AREA: " + "%.2f%n", resArea);
+        System.out.printf("VALOR: R$" + "%.2f%n", resValor);
     }
 }
