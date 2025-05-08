@@ -9,7 +9,7 @@ public class Main {
             de idade negativa. Calcular e imprimir a idade média deste grupo de indivíduos. Se for
             entrado um valor negativo na primeira vez, mostrar a mensagem "impossivel calcular".
          */
-        
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
