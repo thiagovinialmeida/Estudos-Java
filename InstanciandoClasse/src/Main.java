@@ -18,14 +18,10 @@ public class Main {
         ty.setB(sc.nextDouble());
         ty.setC(sc.nextDouble());
 
-        double pX = (tx.getA() + tx.getB() + tx.getC()) / 2;
-        double pY = (ty.getA() + ty.getB() + ty.getC()) / 2;
-
-        double areax = Math.sqrt(pX *(pX - tx.getA())*(pX - tx.getB())*(pX - tx.getC()));
-        double areay = Math.sqrt(pY *(pY - ty.getA())*(pY - ty.getB())*(pY - ty.getC()));
-
-        System.out.println("Area Trinagulo X: " + String.format("%.4f", areax));
-        System.out.println("Area Trinagulo Y: " + String.format("%.4f", areay));
+        double areax = tx.cacularArea();
+        double areay = ty.cacularArea();
+        System.out.printf("Area Trinagulo X: " + "%.4f%n", areax);
+        System.out.printf("Area Trinagulo Y: " + "%.4f%n", areay);
 
         if(areax > areay) {
             System.out.println("Maior area: X");

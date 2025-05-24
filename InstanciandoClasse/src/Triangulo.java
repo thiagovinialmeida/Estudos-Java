@@ -32,4 +32,9 @@ public class Triangulo {
     public void setC(double c) {
         C = c;
     }
+
+    public double cacularArea(){
+        double p = (A + B + C) / 2;
+        return Math.sqrt(p *(p - A)*(p - B)*(p - C));
+    }
 }
